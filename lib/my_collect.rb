@@ -1,11 +1,10 @@
 def my_collect(array)
   i = 0 
-  langs =[]
+  modified_collect = []
   while i < array.length
-  langs << yield(array[i])
-  langs.upcase
+  yield(array[i])
   i += 1
   end
-  langs
+  modified_collect
 end
 
